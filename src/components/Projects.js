@@ -11,17 +11,20 @@ export const Projects=()=>{
     title: "Recipe Website",
     description: "A responsive food recipe app with search and filter features using React, HTML, CSS, and JavaScript.",
     imgUrl: projImg1,
+    githubUrl:"https://github.com/Shreeti-Bajracharya/RecipeWeb",
 },
 {
     title: "To-Do List",
     description: "A simple task management app to add, delete, and mark tasks as completed. Built using JavaScript and React.",
     imgUrl: projImg2,
+    githubUrl:"",
 },
 
 {
     title: "Calculator",
     description: "A basic web calculator that supports standard arithmetic operations using clean UI and JavaScript.",
     imgUrl: projImg3,
+    githubUrl:"https://github.com/Shreeti-Bajracharya/Calculator",
 },
 
         
