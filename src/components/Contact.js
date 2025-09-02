@@ -95,8 +95,7 @@ export const Contact = () => {
           <Col md={6}>
             <h2>Let’s Connect</h2>
             <p>
-              I’d love to hear from you! Whether you have a project in mind, a
-              question, or just want to say hi — feel free to reach out.
+              I’m actively seeking opportunities to grow and contribute as a developer. If you’re hiring or have a project I could be part of, I’d love to connect!
             </p>
 
             <div className="contact-links">
