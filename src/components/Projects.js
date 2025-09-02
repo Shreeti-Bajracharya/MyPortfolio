@@ -4,6 +4,8 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import projImg1 from "../assets/img/projImg1.png";
 import projImg2 from "../assets/img/projImg2.png";
 import projImg3 from "../assets/img/projImg3.png";
+import projImg4 from "../assets/img/projImg4.png";
+
 
 export const Projects=()=>{
     const projects=[
@@ -17,7 +19,7 @@ export const Projects=()=>{
     title: "To-Do List",
     description: "A simple task management app to add, delete, and mark tasks as completed. Built using JavaScript and React.",
     imgUrl: projImg2,
-    githubUrl:"",
+    githubUrl:"https://github.com/Shreeti-Bajracharya/todolist",
 },
 
 {
@@ -25,6 +27,13 @@ export const Projects=()=>{
     description: "A basic web calculator that supports standard arithmetic operations using clean UI and JavaScript.",
     imgUrl: projImg3,
     githubUrl:"https://github.com/Shreeti-Bajracharya/Calculator",
+},
+
+{
+    title: "Medbot",
+    description: "MedBot is an AI-powered medical chatbot that reads PDFs, understands user queries, and provides accurate, human-like answers. It uses vector search with FAISS and Gemini AI for intelligent, context-based responses.",
+    imgUrl: projImg4,
+    githubUrl:"https://github.com/Shreeti-Bajracharya/medbot",
 },
 
         
@@ -61,11 +70,9 @@ export const Projects=()=>{
                             }
                         </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="second">
-                    <h3>Check Out My Learning Resources</h3>
-  <p>Visit my <a href="https://github.com/Shreeti-Bajracharya" target="_blank" rel="noopener noreferrer">GitHub</a> to see what I’m learning!</p>
+                    <Tab.Pane eventKey="second"><p>Explore my <a href="https://github.com/Shreeti-Bajracharya" target="_blank" rel="noopener noreferrer">GitHub projects</a> to see my work and growth in tech!</p>
 </Tab.Pane>
-                    <Tab.Pane eventKey="third"><h3>Upcoming Projects</h3> <p>I'm currently working on exciting projects in React and Machine Learning. Stay tuned for updates!</p></Tab.Pane>
+                    <Tab.Pane eventKey="third"></Tab.Pane>
                   </Tab.Content>
                   </Tab.Container>
                     </Col>
