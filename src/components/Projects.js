@@ -5,16 +5,31 @@ import projImg1 from "../assets/img/projImg1.png";
 import projImg2 from "../assets/img/projImg2.png";
 import projImg3 from "../assets/img/projImg3.png";
 import projImg4 from "../assets/img/projImg4.png";
+import projImg5 from "../assets/img/projImg5.png";
 
 
 export const Projects=()=>{
     const projects=[
+        {
+    title: "Medbot",
+    description: "MedBot is an AI-powered medical chatbot that reads PDFs, understands user queries, and provides accurate, human-like answers. It uses vector search with FAISS and Gemini AI for intelligent, context-based responses.",
+    imgUrl: projImg4,
+    githubUrl:"https://github.com/Shreeti-Bajracharya/medbot",
+},
         {
     title: "Recipe Website",
     description: "A responsive food recipe app with search and filter features using React, HTML, CSS, and JavaScript.",
     imgUrl: projImg1,
     githubUrl:"https://github.com/Shreeti-Bajracharya/RecipeWeb",
 },
+
+{
+    title: "Amazon Clone",
+    description: "Built a responsive Amazon clone using HTML, CSS, and JavaScript with core pages like Home, Product, Cart, and Login. Focused on practicing front-end design, layout consistency, and interactive UI development.",
+    imgUrl: projImg5,
+    githubUrl:"https://github.com/Shreeti-Bajracharya/amazon_clone",
+},
+
 {
     title: "To-Do List",
     description: "A simple task management app to add, delete, and mark tasks as completed. Built using JavaScript and React.",
@@ -27,13 +42,6 @@ export const Projects=()=>{
     description: "A basic web calculator that supports standard arithmetic operations using clean UI and JavaScript.",
     imgUrl: projImg3,
     githubUrl:"https://github.com/Shreeti-Bajracharya/Calculator",
-},
-
-{
-    title: "Medbot",
-    description: "MedBot is an AI-powered medical chatbot that reads PDFs, understands user queries, and provides accurate, human-like answers. It uses vector search with FAISS and Gemini AI for intelligent, context-based responses.",
-    imgUrl: projImg4,
-    githubUrl:"https://github.com/Shreeti-Bajracharya/medbot",
 },
 
         
