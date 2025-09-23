@@ -1,11 +1,13 @@
 {
   "files": {
     "main.css": "/MyPortfolio/static/css/main.764df1d2.css",
-    "main.js": "/MyPortfolio/static/js/main.64c4f7b9.js",
+    "main.js": "/MyPortfolio/static/js/main.5987f123.js",
     "static/js/453.4e9befeb.chunk.js": "/MyPortfolio/static/js/453.4e9befeb.chunk.js",
     "static/media/banner-bg.png": "/MyPortfolio/static/media/banner-bg.4d9ae6fb9c7f71117efd.png",
+    "static/media/projImg6.png": "/MyPortfolio/static/media/projImg6.019eba04a9fc4a3f32d6.png",
     "static/media/projImg5.png": "/MyPortfolio/static/media/projImg5.3702480072802a8580a0.png",
     "static/media/coder.png": "/MyPortfolio/static/media/coder.c9970f8f29b9a7dfa16f.png",
+    "static/media/projImg7.png": "/MyPortfolio/static/media/projImg7.e5c1028ce06e3d0d1e42.png",
     "static/media/projImg1.png": "/MyPortfolio/static/media/projImg1.c407395aa14b11b922e7.png",
     "static/media/projImg4.png": "/MyPortfolio/static/media/projImg4.902d93ba05f1415d7b63.png",
     "static/media/color-sharp.png": "/MyPortfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
@@ -31,11 +33,11 @@
     "static/media/nav-icon1.svg": "/MyPortfolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/nav-icon2.svg": "/MyPortfolio/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
     "main.764df1d2.css.map": "/MyPortfolio/static/css/main.764df1d2.css.map",
-    "main.64c4f7b9.js.map": "/MyPortfolio/static/js/main.64c4f7b9.js.map",
+    "main.5987f123.js.map": "/MyPortfolio/static/js/main.5987f123.js.map",
     "453.4e9befeb.chunk.js.map": "/MyPortfolio/static/js/453.4e9befeb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.764df1d2.css",
-    "static/js/main.64c4f7b9.js"
+    "static/js/main.5987f123.js"
   ]
 }
