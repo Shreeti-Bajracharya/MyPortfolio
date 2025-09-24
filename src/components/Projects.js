@@ -8,6 +8,7 @@ import projImg4 from "../assets/img/projImg4.png";
 import projImg5 from "../assets/img/projImg5.png";
 import projImg6 from "../assets/img/projImg6.png";
 import projImg7 from "../assets/img/projImg7.png";
+import projImg8 from "../assets/img/projImg8.png";
 
 
 // export const Projects=()=>{
@@ -153,6 +154,12 @@ export const Projects = () => {
             description: "A basic web calculator that supports standard arithmetic operations using clean UI and JavaScript.",
             imgUrl: projImg3,
             githubUrl:"https://github.com/Shreeti-Bajracharya/Calculator",
+        },
+        {
+            title: "Weather App",
+            description: "Built a React JS Weather App fetching real-time data from OpenWeatherMap API, allowing users to search any location to view temperature, humidity, wind speed, and conditions.",
+            imgUrl: projImg8,
+            githubUrl:"https://github.com/Shreeti-Bajracharya/WeatherApp",
         },
     ];
 
