@@ -14,6 +14,7 @@ import projImg10 from "../assets/img/projImg10.png";
 import projImg11 from "../assets/img/projImg11.png";
 import projImg12 from "../assets/img/projImg12.png";
 import projImg13 from "../assets/img/projImg13.png";
+import projImg14 from "../assets/img/projImg14.png";
 
 // export const Projects=()=>{
 //     const projects=[
@@ -135,6 +136,14 @@ export const Projects = () => {
       githubUrl:
         "https://github.com/Shreeti-Bajracharya/BrainWaveFrontend",
     },
+    {
+  title: "Real Estate Website",
+  description:
+    "Build a fully responsive Real Estate website using React JS and Tailwind CSS, featuring smooth animations, modern UI/UX, and a functional contact form for property inquiries.",
+  imgUrl: projImg14, // replace with the appropriate image variable
+  githubUrl: "https://github.com/Shreeti-Bajracharya/RealEstateFrontend",
+}
+,
     {
       title: "Movie Application",
       description:
