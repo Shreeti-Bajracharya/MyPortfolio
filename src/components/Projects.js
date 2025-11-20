@@ -17,6 +17,7 @@ import projImg13 from "../assets/img/projImg13.png";
 import projImg14 from "../assets/img/projImg14.png";
 import projImg15 from "../assets/img/projImg15.png";
 import projImg16 from "../assets/img/projImg16.png";
+import projImg17 from "../assets/img/projImg17.png";
 
 // export const Projects=()=>{
 //     const projects=[
@@ -127,6 +128,13 @@ export const Projects = () => {
       description:
         "Developed a responsive non-profit website using React JS and Tailwind CSS to showcase the foundation’s community initiatives across Nepal, including emergency response, healthcare, and community development programs.",
       imgUrl: projImg16,
+      githubUrl: "",
+    },
+    {
+      title: "Clothing Ecommerce",
+      description:
+        "Developed a full-stack eCommerce website using React JS, Node JS, Express JS, and MongoDB. Users can browse products, filter and sort them, add items to the cart, and place orders using Cash on Delivery. Admin dashboard allows product management and order tracking. The project demonstrates complete front-end and back-end integration using MERN stack.",
+      imgUrl: projImg17,
       githubUrl: "",
     },
   ];
@@ -300,8 +308,11 @@ export const Projects = () => {
         </Row>
       </Container>
 
-      <img className="background-image-right" src={colorSharp2} alt="background" />
+      <img
+        className="background-image-right"
+        src={colorSharp2}
+        alt="background"
+      />
     </section>
   );
 };
-
