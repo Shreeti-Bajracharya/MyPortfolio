@@ -121,7 +121,7 @@ export const Projects = () => {
       description:
         "Developed a full-stack insurance website using React JS, Tailwind CSS, and Node.js. The platform features English–Nepali language support, an admin login panel for real-time content management, and modules for product browsing, premium calculation, claim submission, and branch contact.",
       imgUrl: projImg15,
-      githubUrl: "https://github.com/Shreeti-Bajracharya/StarMicroInsurance",
+      githubUrl: "",
     },
     {
       title: "BBTM Foundation",
