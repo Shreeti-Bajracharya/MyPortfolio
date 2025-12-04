@@ -13,105 +13,14 @@ import projImg9 from "../assets/img/projImg9.png";
 import projImg10 from "../assets/img/projImg10.png";
 import projImg11 from "../assets/img/projImg11.png";
 import projImg12 from "../assets/img/projImg12.png";
-import projImg13 from "../assets/img/projImg13.png";
+import projImg18 from "../assets/img/projImg18.png";
 import projImg14 from "../assets/img/projImg14.png";
-import projImg15 from "../assets/img/projImg15.png";
+import projImg19 from "../assets/img/projImg19.png";
 import projImg16 from "../assets/img/projImg16.png";
 import projImg17 from "../assets/img/projImg17.png";
+import projImg20 from "../assets/img/projImg20.png";
 
-// export const Projects=()=>{
-//     const projects=[
 
-//         {
-//     title: "Recipe Website",
-//     description: "A responsive food recipe app with search and filter features using React, HTML, CSS, and JavaScript.",
-//     imgUrl: projImg1,
-//     githubUrl:"https://github.com/Shreeti-Bajracharya/RecipeWeb",
-// },
-
-// {
-//     title: "To-Do List",
-//     description: "A simple task management app to add, delete, and mark tasks as completed. Built using JavaScript and React.",
-//     imgUrl: projImg2,
-//     githubUrl:"https://github.com/Shreeti-Bajracharya/todolist",
-// },
-
-// {
-//     title: "Calculator",
-//     description: "A basic web calculator that supports standard arithmetic operations using clean UI and JavaScript.",
-//     imgUrl: projImg3,
-//     githubUrl:"https://github.com/Shreeti-Bajracharya/Calculator",
-// },
-// {
-//     title: "Medbot",
-//     description: "MedBot is an AI-powered medical chatbot that reads PDFs, understands user queries, and provides accurate, human-like answers. It uses vector search with FAISS and Gemini AI for intelligent, context-based responses.",
-//     imgUrl: projImg4,
-//     githubUrl:"https://github.com/Shreeti-Bajracharya/medbot",
-// },
-// {
-//     title: "Amazon Clone",
-//     description: "Built a responsive Amazon clone using HTML, CSS, and JavaScript with core pages like Home, Product, Cart, and Login. Focused on practicing front-end design, layout consistency, and interactive UI development.",
-//     imgUrl: projImg5,
-//     githubUrl:"https://github.com/Shreeti-Bajracharya/amazon_clone",
-// },
-// {
-//     title: "Movie Application",
-//     description: "Built a React Movie App with API integration, hooks, and routing for dynamic and responsive UI.",
-//     imgUrl: projImg6,
-//     githubUrl:"https://github.com/Shreeti-Bajracharya/MovieApplication",
-// },
-// {
-//     title: "News Application",
-//     description: "Built a responsive React News App with Bootstrap, API-driven articles, search, category filters, and pagination.",
-//     imgUrl: projImg7,
-//     githubUrl:"https://github.com/Shreeti-Bajracharya/NewsMagazine",
-// },
-
-//     ];
-//     return(
-//         <section className="project" id="projects">
-//             <Container>
-//                 <Row>
-//                     <Col>
-//                     <h2>My Projects</h2>
-//                     <p> Things I’ve Built</p>
-
-//                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
-//                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-//                     <Nav.Item>
-//                       <Nav.Link eventKey="first">Tab 1</Nav.Link>
-//                     </Nav.Item>
-//                     <Nav.Item>
-//                       <Nav.Link eventKey="second">Tab 2</Nav.Link>
-//                     </Nav.Item>
-//                     <Nav.Item>
-//                       <Nav.Link eventKey="third">Tab 3</Nav.Link>
-//                     </Nav.Item>
-//                   </Nav>
-//                   <Tab.Content>
-//                     <Tab.Pane eventKey="first">
-//                         <Row>
-//                             {
-//                                 projects.map((project, index)=>{
-//                                     return(
-//                                         <ProjectCard key={index} {...project}/>
-//                                     )
-//                                 })
-//                             }
-//                         </Row>
-//                     </Tab.Pane>
-//                     <Tab.Pane eventKey="second"><p>Explore my <a href="https://github.com/Shreeti-Bajracharya" target="_blank" rel="noopener noreferrer">GitHub projects</a> to see my work and growth in tech!</p>
-// </Tab.Pane>
-//                     <Tab.Pane eventKey="third"></Tab.Pane>
-//                   </Tab.Content>
-//                   </Tab.Container>
-//                     </Col>
-//                 </Row>
-//             </Container>
-//             <img className="background-image-right" src={colorSharp2} alt="image"></img>
-//         </section>
-//     )
-// }
 
 export const Projects = () => {
   const realTimeProjects = [
@@ -119,7 +28,7 @@ export const Projects = () => {
       title: "Insurance Company System",
       description:
         "Full-stack insurance platform using React, Tailwind, Node.js with bilingual (English–Nepali) support, Admin CRM, claims, policies, branch management and real-time updates.",
-      imgUrl: projImg15,
+      imgUrl: projImg19,
       githubUrl: "",
     },
     {
@@ -136,6 +45,14 @@ export const Projects = () => {
       imgUrl: projImg17,
       githubUrl: "",
     },
+    {
+  title: "Liquor Store Ecommerce",
+  description:
+    "A fully responsive liquor e-commerce platform built using React and Tailwind CSS. The frontend features product listings, category browsing, search and filter functionality, user authentication, cart, and checkout pages. Backend integration with APIs is in progress to support real-time inventory, orders, and payment processing.",
+  imgUrl: projImg20,
+  githubUrl: "",
+},
+
   ];
 
   const majorProjects = [
@@ -143,7 +60,7 @@ export const Projects = () => {
       title: "Mental Health Assistant & Consultation System",
       description:
         "MERN-based appointment system with chatbot microservice using Gemini AI, Sentence Transformer, and FAISS to detect severity and suggest help.",
-      imgUrl: projImg13,
+      imgUrl: projImg18,
       githubUrl: "https://github.com/Shreeti-Bajracharya/MedicalChat",
     },
     {
