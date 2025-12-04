@@ -114,129 +114,98 @@ import projImg17 from "../assets/img/projImg17.png";
 // }
 
 export const Projects = () => {
-  // 🟢 Tab 1: Real-Time / Internship Projects
   const realTimeProjects = [
     {
-      title: "Star Micro Insurance",
+      title: "Insurance Company System",
       description:
-        "Developed a full-stack insurance website using React JS, Tailwind CSS, and Node.js. The platform features English–Nepali language support, an admin login panel for real-time content management, and modules for product browsing, premium calculation, claim submission, and branch contact.",
+        "Full-stack insurance platform using React, Tailwind, Node.js with bilingual (English–Nepali) support, Admin CRM, claims, policies, branch management and real-time updates.",
       imgUrl: projImg15,
       githubUrl: "",
     },
     {
-      title: "BBTM Foundation",
+      title: "BBTM Foundation Website",
       description:
-        "Developed a responsive non-profit website using React JS and Tailwind CSS to showcase the foundation’s community initiatives across Nepal, including emergency response, healthcare, and community development programs.",
+        "Responsive non-profit website showcasing healthcare, emergency response, and social programs using React and Tailwind CSS.",
       imgUrl: projImg16,
       githubUrl: "",
     },
     {
-      title: "Clothing Ecommerce",
+      title: "Clothing E-commerce System",
       description:
-        "Developed a full-stack eCommerce website using React JS, Node JS, Express JS, and MongoDB. Users can browse products, filter and sort them, add items to the cart, and place orders using Cash on Delivery. Admin dashboard allows product management and order tracking. The project demonstrates complete front-end and back-end integration using MERN stack.",
+        "MERN stack e-commerce platform with product filtering, order management and admin dashboard with full front-end & backend integration.",
       imgUrl: projImg17,
       githubUrl: "",
     },
   ];
 
-  // 🟣 Tab 2: Major Academic / Personal Projects
   const majorProjects = [
     {
-      title: "Mental Health Chatbot",
+      title: "Mental Health Assistant & Consultation System",
       description:
-        "AI-powered chatbot that analyzes user symptoms and provides personalized mental health guidance using Python, Flask, and MongoDB.",
+        "MERN-based appointment system with chatbot microservice using Gemini AI, Sentence Transformer, and FAISS to detect severity and suggest help.",
       imgUrl: projImg13,
       githubUrl: "https://github.com/Shreeti-Bajracharya/MedicalChat",
     },
     {
       title: "Agent Website",
       description:
-        "A modern digital agency website built with React JS and Tailwind CSS featuring sleek hover effects and smooth Framer Motion animations, with a functional contact form for direct client communication.",
+        "Digital agency website built using React, Tailwind with modern effects and Framer Motion animations.",
       imgUrl: projImg9,
       githubUrl: "https://github.com/Shreeti-Bajracharya/Agent-Website",
     },
     {
-      title: "Modern Responsive",
+      title: "Modern UI Website",
       description:
-        "Built a fully responsive modern UI/UX website using React JS and Tailwind CSS with parallax effects, bento layouts, and mobile-first design.",
+        "Modern UI website featuring parallax sections, animations, and responsive layouts using React and Tailwind CSS.",
       imgUrl: projImg10,
       githubUrl: "https://github.com/Shreeti-Bajracharya/BrainWaveFrontend",
     },
     {
       title: "Real Estate Website",
       description:
-        "Built a fully responsive Real Estate website using React JS and Tailwind CSS, featuring smooth animations, modern UI/UX, and a functional contact form for property inquiries.",
+        "Real estate website with responsive UI, modern animations and enquiry form using React + Tailwind.",
       imgUrl: projImg14,
       githubUrl: "https://github.com/Shreeti-Bajracharya/RealEstateFrontend",
     },
-    {
-      title: "Movie Application",
-      description:
-        "Built a React Movie App with API integration, hooks, and routing for dynamic and responsive UI.",
-      imgUrl: projImg6,
-      githubUrl: "https://github.com/Shreeti-Bajracharya/MovieApplication",
-    },
-    {
-      title: "News Application",
-      description:
-        "Developed a responsive React News App with Bootstrap, API-driven articles, search, category filters, and pagination.",
-      imgUrl: projImg7,
-      githubUrl: "https://github.com/Shreeti-Bajracharya/NewsMagazine",
-    },
-    {
-      title: "Recipe Website",
-      description:
-        "A responsive food recipe app with search and filter features using React, HTML, CSS, and JavaScript.",
-      imgUrl: projImg1,
-      githubUrl: "https://github.com/Shreeti-Bajracharya/RecipeWeb",
-    },
   ];
 
-  // 🟡 Tab 3: Frontend Practice Projects
   const frontendProjects = [
     {
       title: "Amazon Clone",
-      description:
-        "Built a responsive Amazon clone using HTML, CSS, and JavaScript with pages like Home, Product, Cart, and Login to practice layout and UI interactions.",
+      description: "Responsive clone built using HTML, CSS, and JS.",
       imgUrl: projImg5,
       githubUrl: "https://github.com/Shreeti-Bajracharya/amazon_clone",
     },
     {
-      title: "Flower Shop E-commerce Website",
-      description:
-        "Designed a fully responsive flower shop e-commerce website using pure HTML and CSS with modern Flexbox layout.",
+      title: "Flower Shop Website",
+      description: "Pure HTML + CSS e-commerce layout using Flexbox.",
       imgUrl: projImg11,
       githubUrl: "https://github.com/Shreeti-Bajracharya/ResponsivePurple",
     },
     {
-      title: "Headphones Landing Page",
-      description:
-        "Created a fully responsive landing page using HTML, CSS, and JavaScript, featuring scroll animations and modern product layout.",
+      title: "Landing Page UI",
+      description: "Responsive landing page with animations & modern design.",
       imgUrl: projImg12,
       githubUrl: "https://github.com/Shreeti-Bajracharya/ResponsiveLandingPage",
     },
   ];
 
-  // 🔵 Tab 4: Mini / Beginner Projects
   const miniProjects = [
     {
       title: "To-Do List",
-      description:
-        "A simple task management app to add, delete, and mark tasks as completed using JavaScript and React.",
+      description: "Task management app using React & JavaScript.",
       imgUrl: projImg2,
       githubUrl: "https://github.com/Shreeti-Bajracharya/todolist",
     },
     {
       title: "Calculator",
-      description:
-        "A basic web calculator that supports standard arithmetic operations with clean UI using JavaScript.",
+      description: "Web calculator using HTML, CSS & JavaScript.",
       imgUrl: projImg3,
       githubUrl: "https://github.com/Shreeti-Bajracharya/Calculator",
     },
     {
       title: "Weather App",
-      description:
-        "Built a React JS Weather App fetching real-time data from OpenWeatherMap API to display weather details by city.",
+      description: "API-based weather app using React JS.",
       imgUrl: projImg8,
       githubUrl: "https://github.com/Shreeti-Bajracharya/WeatherApp",
     },

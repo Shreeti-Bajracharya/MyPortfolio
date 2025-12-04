@@ -1,5 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
-import aboutImg from "../assets/img/mee.jpg"; // Your image file
+import aboutImg from "../assets/img/mee.jpg";
+import spark from "../assets/img/spark.png"; // add your spark icon here
 
 export const About = () => {
   return (
@@ -10,21 +11,26 @@ export const About = () => {
             <div className="about-content">
               <span className="about-year">2025</span>
               <h2>About Me</h2>
+
               <p>
-                I'm Shreeti Bajracharya, a BSc CSIT student passionate about building elegant and meaningful digital experiences. With a solid foundation in front-end development, basic DevOps, and data labeling, I strive to turn ideas into interactive, responsive, and inclusive web applications.
+                I'm Shreeti Bajracharya, a BSc CSIT student passionate about crafting
+                elegant, meaningful, and user-friendly digital experiences. With a strong
+                foundation in front-end development, basic DevOps, and data labeling, I
+                enjoy turning ideas into responsive and visually polished web interfaces.
               </p>
+
               <p>
-                I enjoy problem-solving, collaborating with tech communities like Code for Change, and continuously learning to improve my skills. Currently, I’m exploring machine learning and mental health-related tech solutions.
+                I love solving problems, creating intuitive designs, and engaging with
+                tech communities like Code for Change. I’m continuously learning and
+                currently exploring machine learning and mental-health–focused
+                technology to build solutions that genuinely help people.
               </p>
-              {/* <div className="about-footer">
-                <span>2 | AS A DEVELOPER</span>
-                <hr />
-              </div> */}
             </div>
           </Col>
+
           <Col md={5}>
             <div className="about-img-wrapper">
-              <img src="" alt="design" className="spark-icon" />
+              <img src={spark} alt="spark" className="spark-icon" />
               <div className="about-img-arch">
                 <img src={aboutImg} alt="Shreeti Bajracharya" />
               </div>

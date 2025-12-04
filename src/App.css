@@ -300,72 +300,63 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-right: 0.08em solid #666;
 }
 /************ About Me CSS ************/
+/************ About Me ************/
 .about {
-  padding: 100px 0;
-  position: relative;
+  padding: 110px 0;
   background: #151515;
   color: #fff;
 }
 
+/* content area */
 .about-content {
   padding-right: 20px;
 }
 
 .about-year {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   color: #b8b8b8;
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
 }
 
+/* title with slight gradient */
 .about h2 {
-  font-size: 48px;
+  font-size: 46px;
   font-weight: 700;
   margin-bottom: 20px;
+  background: linear-gradient(90deg, #ffffff, #d9cfff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .about p {
-  color: #B8B8B8;
+  color: #cfcfcf;
   font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 20px;
-  text-align: justify; 
+  line-height: 1.7;
+  margin-bottom: 18px;
+  text-align: justify;
 }
 
-.about-footer {
-  margin-top: 30px;
-}
-
-.about-footer span {
-  font-size: 16px;
-  color: #B8B8B8;
-}
-
-.about-footer hr {
-  border: 0;
-  border-top: 1px solid #b8b8b865;
-  margin-top: 10px;
-  width: 60%;
-}
-
+/************ Image ************/
 .about-img-wrapper {
   position: relative;
   text-align: center;
 }
 
 .about-img-arch {
-  width: 340px;               /* Increased circle size */
+  width: 340px;
   height: 340px;
   border-radius: 50%;
   overflow: hidden;
-  display: inline-block;
-  background-color: #151515;
-  padding: 0;
-  box-sizing: border-box;
   margin-top: 20px;
-}
 
+  /* soft glow border */
+  padding: 6px;
+  background: linear-gradient(135deg, #c5a8ff, #624bff, #2f2375);
+  box-shadow: 0 0 20px rgba(120, 80, 255, 0.4);
+}
 
 .about-img-arch img {
   width: 100%;
@@ -373,59 +364,118 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   object-fit: cover;
   border-radius: 50%;
 }
+
+/************ Spark Icon ************/
 .spark-icon {
   position: absolute;
-  top: 0;
-  left: -40px;
-  width: 60px;
-  z-index: -1;
-  opacity: 0.8;
+  top: -20px;
+  left: -30px;
+  width: 55px;
+  opacity: 0.9;
+  animation: sparkFloat 3s ease-in-out infinite;
 }
 
+@keyframes sparkFloat {
+  0% { transform: translateY(0); opacity: 0.85; }
+  50% { transform: translateY(-12px); opacity: 1; }
+  100% { transform: translateY(0); opacity: 0.85; }
+}
 
-
-/************ Skills Css ************/
+/* skill css */
 
 .skill {
-  padding: 100px 0;
+  padding: 120px 0;
   position: relative;
-  background: linear-gradient(to right, #0F0C29, #302B63, #8A2387);
+  background: linear-gradient(135deg, #1f0066, #4b00b3, #6a1bff);
+  overflow: hidden;
 }
-.skill-bx {
-  background: #151515;
-  border-radius: 64px;
-  text-align: center;
-  padding: 60px 50px;
-  /* margin-top: 20px;  was -60px */
 
-}
-.skill h2 {
-	font-size: 45px;
-	font-weight: 700;
-}
-.skill p {
-    color: #B8B8B8;
-    font-size: 18px;
-    letter-spacing: 0.8px;
-    line-height: 1.5em;
-    margin: 14px 0 75px 0;
-}
-.skill-slider {
-  width: 80%;
-  margin: 0 auto;
+.skill-bx {
+  background: #1a1a1a;
+  border-radius: 50px;
+  text-align: center;
+  padding: 60px 40px;
   position: relative;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
 }
-.skill-slider .item img {
-  width: 50%;
-  margin: 0 auto 15px auto;
+
+.skill h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 15px;
 }
+
+.skill p {
+  color: #d1d1d1;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 50px;
+}
+
+/* Skills List */
+.skills-list {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.skill-item {
+  margin-bottom: 25px;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #8a2387, #e94057, #f27121);
+  border-radius: 10px;
+  width: 0%;
+  transition: width 2s ease-in-out;
+}
+
+/* Trigger class for scroll animation */
+.skill-progress.animate-bar {
+  transition: width 2s ease-in-out;
+}
+
+/* Background Image */
 .background-image-left {
-  top: 28%;
   position: absolute;
-  bottom: 0;
-  width: 40%;
-  z-index: -4;
+  top: 20%;
+  left: -50px;
+  width: 45%;
+  z-index: -2;
+  opacity: 0.2;
+  transform: rotate(-15deg);
+  pointer-events: none;
 }
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .skill h2 { font-size: 40px; }
+  .skill p { font-size: 16px; }
+}
+
+@media (max-width: 768px) {
+  .skill { padding: 80px 0; }
+  .skill-bx { padding: 50px 20px; }
+}
+
 /************ Projects Css ************/
 .project {
   padding: 100px 0;
