@@ -13,18 +13,20 @@ export const About = () => {
               <h2>About Me</h2>
 
               <p>
-                I'm Shreeti Bajracharya, a BSc CSIT student passionate about crafting
-                elegant, meaningful, and user-friendly digital experiences. With a strong
-                foundation in front-end development, basic DevOps, and data labeling, I
-                enjoy turning ideas into responsive and visually polished web interfaces.
-              </p>
+  I'm Shreeti Bajracharya, a final-year BSc CSIT student with a strong interest in both
+  software development and quality assurance. I have hands-on experience with front-end
+  development using React.js and basic backend concepts, along with foundational knowledge
+  of software testing and API validation using Postman.
+</p>
 
-              <p>
-                I love solving problems, creating intuitive designs, and engaging with
-                tech communities like Code for Change. I’m continuously learning and
-                currently exploring machine learning and mental-health–focused
-                technology to build solutions that genuinely help people.
-              </p>
+<p>
+  I enjoy building user interfaces as well as ensuring that applications work correctly
+  and reliably. I am detail-oriented, eager to learn, and interested in understanding both
+  how software is built and how it is tested. Through projects and internships, I’m
+  continuously improving my skills while working in real development environments and
+  collaborating with teams.
+</p>
+
             </div>
           </Col>
 

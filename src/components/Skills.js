@@ -4,10 +4,10 @@ import colorSharp from "../assets/img/color-sharp.png";
 
 export const Skills = () => {
   const skillsData = [
-    { name: "Web Development", level: 90 },
+    { name: "Web Development", level: 80 },
     { name: "QA Testing", level: 75 },
-    { name: "Problem Solving", level: 85 },
-    { name: "Data Specialization", level: 70 },
+    { name: "Problem Solving", level: 90 },
+    { name: "Data Specialization", level: 80 },
   ];
 
   useEffect(() => {
