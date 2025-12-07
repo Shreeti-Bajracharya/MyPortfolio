@@ -4,10 +4,12 @@ import colorSharp from "../assets/img/color-sharp.png";
 
 export const Skills = () => {
   const skillsData = [
-    { name: "Web Development", level: 80 },
-    { name: "QA Testing", level: 75 },
-    { name: "Problem Solving", level: 90 },
-    { name: "Data Specialization", level: 80 },
+    { name: "Web Development (React, Tailwind, Node.js, Express)", level: 85 },
+    { name: "QA & Software Testing (Manual, Test Cases, Postman/API)", level: 75 },
+    { name: "Automation Testing", level: 50 },
+    { name: "Data Handling & Cloud (CloudFactory workflow)", level: 80 },
+    { name: "Problem Solving & Analytical Thinking", level: 90 },
+    { name: "Version Control & Collaboration (Git, GitHub)", level: 70 },
   ];
 
   useEffect(() => {
