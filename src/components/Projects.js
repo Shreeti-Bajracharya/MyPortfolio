@@ -1,6 +1,7 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
+
 import projImg1 from "../assets/img/projImg1.png";
 import projImg2 from "../assets/img/projImg2.png";
 import projImg3 from "../assets/img/projImg3.png";
@@ -20,9 +21,8 @@ import projImg16 from "../assets/img/projImg16.png";
 import projImg17 from "../assets/img/projImg17.png";
 import projImg20 from "../assets/img/projImg20.png";
 
-
-
 export const Projects = () => {
+
   const realTimeProjects = [
     {
       title: "Insurance Company System",
@@ -41,46 +41,45 @@ export const Projects = () => {
     {
       title: "Clothing E-commerce System",
       description:
-        "MERN stack e-commerce platform with product filtering, order management and admin dashboard with full front-end & backend integration.",
+        "MERN stack e-commerce platform with product filtering, order management and admin dashboard.",
       imgUrl: projImg17,
       githubUrl: "",
     },
     {
-  title: "Liquor Store Ecommerce",
-  description:
-    "A fully responsive liquor e-commerce platform built using React and Tailwind CSS. The frontend features product listings, category browsing, search and filter functionality, user authentication, cart, and checkout pages. Backend integration with APIs is in progress to support real-time inventory, orders, and payment processing.",
-  imgUrl: projImg20,
-  githubUrl: "",
-},
-
+      title: "Liquor Store Ecommerce",
+      description:
+        "Full liquor e-commerce platform built in React + Tailwind with cart, category browsing, search, and upcoming API integrations.",
+      imgUrl: projImg20,
+      githubUrl: "",
+    },
   ];
 
   const majorProjects = [
     {
       title: "Mental Health Assistant & Consultation System",
       description:
-        "MERN-based appointment system with chatbot microservice using Gemini AI, Sentence Transformer, and FAISS to detect severity and suggest help.",
+        "AI-powered MERN appointment and chatbot system using Gemini, Sentence Transformer, and FAISS indexing.",
       imgUrl: projImg18,
       githubUrl: "https://github.com/Shreeti-Bajracharya/MedicalChat",
     },
     {
       title: "Agent Website",
       description:
-        "Digital agency website built using React, Tailwind with modern effects and Framer Motion animations.",
+        "Full animated digital agency website using React, Tailwind and Framer Motion.",
       imgUrl: projImg9,
       githubUrl: "https://github.com/Shreeti-Bajracharya/Agent-Website",
     },
     {
       title: "Modern UI Website",
       description:
-        "Modern UI website featuring parallax sections, animations, and responsive layouts using React and Tailwind CSS.",
+        "Modern UI website featuring parallax sections, animations, and responsive layouts.",
       imgUrl: projImg10,
       githubUrl: "https://github.com/Shreeti-Bajracharya/BrainWaveFrontend",
     },
     {
       title: "Real Estate Website",
       description:
-        "Real estate website with responsive UI, modern animations and enquiry form using React + Tailwind.",
+        "Real estate website with modern animations, responsive UI and enquiry form.",
       imgUrl: projImg14,
       githubUrl: "https://github.com/Shreeti-Bajracharya/RealEstateFrontend",
     },
@@ -103,7 +102,8 @@ export const Projects = () => {
       title: "Landing Page UI",
       description: "Responsive landing page with animations & modern design.",
       imgUrl: projImg12,
-      githubUrl: "https://github.com/Shreeti-Bajracharya/ResponsiveLandingPage",
+      githubUrl:
+        "https://github.com/Shreeti-Bajracharya/ResponsiveLandingPage",
     },
   ];
 
@@ -133,14 +133,15 @@ export const Projects = () => {
       <Container>
         <Row>
           <Col>
-            <h2>My Projects</h2>
-            <p>Things I’ve Built and Worked On</p>
+            <h2 className="section-heading">Projects</h2>
+            <p className="section-subtitle">
+              A curated collection of the work I've designed, developed, and contributed to.
+            </p>
 
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav
                 variant="pills"
-                className="nav-pills mb-5 justify-content-center align-items-center"
-                id="pills-tab"
+                className="nav-pills justify-content-center align-items-center modern-tabs"
               >
                 <Nav.Item>
                   <Nav.Link eventKey="first">Real-Time / Internship</Nav.Link>
@@ -156,7 +157,7 @@ export const Projects = () => {
                 </Nav.Item>
               </Nav>
 
-              <Tab.Content>
+              <Tab.Content className="fade-up">
                 <Tab.Pane eventKey="first">
                   <Row>
                     {realTimeProjects.map((project, index) => (

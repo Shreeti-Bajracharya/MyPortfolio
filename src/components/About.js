@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import aboutImg from "../assets/img/mee.jpg";
+import aboutImg from "../assets/img/shreeti.jpeg";
 import spark from "../assets/img/spark.png"; // add your spark icon here
 
 export const About = () => {

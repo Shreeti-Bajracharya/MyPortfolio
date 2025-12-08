@@ -391,7 +391,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .skill-bx {
-  background: #1a1a1a;
+  background-color: #121212;
   border-radius: 50px;
   text-align: center;
   padding: 60px 40px;
@@ -476,166 +476,206 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .skill-bx { padding: 50px 20px; }
 }
 
-/************ Projects Css ************/
+/************ Projects Section ************/
 .project {
   padding: 100px 0;
+ background-color: #121212;
   position: relative;
-  background: #151515;
-}
-
-.project h2 {
-  font-size: 45px;
-  font-weight: 700;
-  text-align: center;
-}
-
-.project p {
-  color: #B8B8B8;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
-  margin: 14px auto 30px auto;
-  text-align: center;
-  width: 56%;
-}
-
-/* Navigation Tabs */
-.project .nav.nav-pills {
-  width: 85%;
-  margin: 0 auto;
-  border-radius: 50px;
-  background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
 }
 
-.project .nav.nav-pills .nav-item {
-  width: 25%; /* Adjusted for 4 tabs */
-}
-
-.project .nav.nav-pills .nav-link {
-  background-color: transparent;
-  border-radius: 0;
-  padding: 17px 0;
+.section-heading {
+  font-size: 46px;
+  font-weight: 800;
   color: #fff;
-  width: 100%;
-  font-size: 17px;
-  letter-spacing: 0.8px;
-  font-weight: 500;
-  position: relative;
-  transition: 0.3s ease-in-out;
   text-align: center;
-  z-index: 0;
 }
 
-.project .nav.nav-pills .nav-link::before {
-  content: "";
+.section-subtitle {
+  color: #cfcfcf;
+  font-size: 18px;
+  width: 60%;
+  margin: 16px auto 40px;
+  text-align: center;
+}
+
+/************ Tabs ************/
+/************ PROJECT CATEGORY TABS (CLEAN + MODERN) ************/
+.modern-tabs {
+  width: max-content;
+  margin: 0 auto 40px auto;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 50px;
+  display: flex;
+  gap: 12px;
+}
+
+.modern-tabs .nav-item {
+  margin: 0 !important;
+}
+
+.modern-tabs .nav-link {
+  color: #dcdcdc;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 22px !important;
+  border-radius: 40px;
+  transition: all .3s ease;
+  background: transparent;
+}
+
+.modern-tabs .nav-link:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.modern-tabs .nav-link.active {
+  color: #fff;
+  background: linear-gradient(90deg, #8a2387, #302b63, #0f0c29);
+  box-shadow: 0 0 15px rgba(138, 35, 135, 0.5);
+  font-weight: 600;
+}
+
+/* More gap between category filter and project cards */
+.project .modern-tabs {
+  margin-bottom: 60px !important;
+}
+
+.project .project-grid {
+  margin-top: 20px;
+}
+
+
+
+/************ Project Card ************/
+.project-card {
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  margin-bottom: 28px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  transition: all 0.35s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  filter: brightness(0.85);
+}
+
+.project-overlay {
   position: absolute;
-  width: 0;
-  height: 100%;
-  background: linear-gradient(to right, #0F0C29, #302B63, #8A2387);
   top: 0;
   left: 0;
-  z-index: -1;
-  transition: 0.3s ease-in-out;
-}
-
-.project .nav.nav-pills .nav-link.active::before {
-  width: 100% !important;
-}
-
-.project .nav.nav-pills .nav-link.active {
-  border: 1px solid rgba(255, 255, 255, 1);
-}
-
-/* Add subtle highlight for the first (Internship) tab */
-.nav-link#projects-tabs-tab-first {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 55px 0 0 55px;
-  box-shadow: 0 0 10px rgba(138, 35, 135, 0.5);
-}
-
-.nav-link#projects-tabs-tab-second,
-.nav-link#projects-tabs-tab-third {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.nav-link#projects-tabs-tab-fourth {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 0 55px 55px 0;
-}
-
-/* Project Image Cards */
-.proj-imgbx {
-  position: relative;
-  border-radius: 30px;
-  overflow: hidden;
-  margin-bottom: 24px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease;
-}
-
-.proj-imgbx:hover {
-  transform: scale(1.03);
-}
-
-.proj-imgbx::before {
-  content: "";
-  background: linear-gradient(to right, #0F0C29, #302B63, #8A2387);
-  opacity: 0.85;
-  position: absolute;
   width: 100%;
-  height: 0;
-  transition: 0.4s ease-in-out;
-}
-
-.proj-imgbx:hover::before {
   height: 100%;
-}
-
-/* Project Text Overlay */
-.proj-txtx {
-  position: absolute;
-  text-align: center;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.5s ease-in-out;
+  padding: 25px;
+  background: rgba(15, 12, 41, 0.85);
+  color: #fff;
   opacity: 0;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+  transition: 0.4s ease;
 }
 
-.proj-imgbx:hover .proj-txtx {
-  top: 50%;
+.project-card:hover .project-overlay {
   opacity: 1;
 }
 
-.proj-txtx h4 {
-  font-size: 30px;
+.project-overlay h4 {
+  font-size: 22px;
   font-weight: 700;
-  letter-spacing: 0.8px;
-  line-height: 1.1em;
+}
+
+.project-overlay p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #e8e8e8;
+}
+
+.github-btn {
+  display: inline-block;
+  padding: 8px 18px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  font-size: 14px;
+  margin-top: 10px;
   color: #fff;
+  transition: 0.3s ease;
 }
 
-.proj-txtx span {
-  font-style: italic;
-  font-weight: 400;
-  font-size: 15px;
-  letter-spacing: 0.8px;
-  color: #f1f1f1;
+.github-btn:hover {
+  background: #fff;
+  color: #000;
 }
 
-/* Background Decoration */
+/************ Background Graphic ************/
 .background-image-right {
-  top: 20%;
   position: absolute;
-  bottom: 0;
-  width: 35%;
+  top: 20%;
   right: 0;
-  z-index: -4;
-  opacity: 0.8;
+  width: 35%;
+  opacity: 0.45;
+  z-index: -1;
 }
+/************ Category Filter Responsive Fix ************/
+
+/* Tablets */
+@media (max-width: 768px) {
+  .modern-tabs {
+    width: 100% !important;
+    max-width: 100%;
+    padding: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+
+  .modern-tabs .nav-item {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+
+  .modern-tabs .nav-link {
+    width: 100%;
+    padding: 10px 14px !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .modern-tabs {
+    width: 100% !important;
+    border-radius: 18px;
+    padding: 10px;
+  }
+
+  .modern-tabs .nav-item {
+    width: 48%;
+  }
+
+  .modern-tabs .nav-link {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+  }
+}
+
+/* Very Small Devices */
+@media (max-width: 360px) {
+  .modern-tabs .nav-item {
+    width: 100%;
+  }
+}
+
 
 
 /************ Projects Css ************/
