@@ -60,28 +60,28 @@ export const Projects = () => {
       description:
         "AI-powered MERN appointment and chatbot system using Gemini, Sentence Transformer, and FAISS indexing.",
       imgUrl: projImg18,
-      githubUrl: "https://github.com/Shreeti-Bajracharya/MedicalChat",
+      githubUrl: "",
     },
     {
       title: "Agent Website",
       description:
         "Full animated digital agency website using React, Tailwind and Framer Motion.",
       imgUrl: projImg9,
-      githubUrl: "https://github.com/Shreeti-Bajracharya/Agent-Website",
+      githubUrl: "",
     },
     {
       title: "Modern UI Website",
       description:
         "Modern UI website featuring parallax sections, animations, and responsive layouts.",
       imgUrl: projImg10,
-      githubUrl: "https://github.com/Shreeti-Bajracharya/BrainWaveFrontend",
+      githubUrl: "",
     },
     {
       title: "Real Estate Website",
       description:
         "Real estate website with modern animations, responsive UI and enquiry form.",
       imgUrl: projImg14,
-      githubUrl: "https://github.com/Shreeti-Bajracharya/RealEstateFrontend",
+      githubUrl: "",
     },
   ];
 
@@ -90,20 +90,20 @@ export const Projects = () => {
       title: "Amazon Clone",
       description: "Responsive clone built using HTML, CSS, and JS.",
       imgUrl: projImg5,
-      githubUrl: "https://github.com/Shreeti-Bajracharya/amazon_clone",
+      githubUrl: "",
     },
     {
       title: "Flower Shop Website",
       description: "Pure HTML + CSS e-commerce layout using Flexbox.",
       imgUrl: projImg11,
-      githubUrl: "https://github.com/Shreeti-Bajracharya/ResponsivePurple",
+      githubUrl: "",
     },
     {
       title: "Landing Page UI",
       description: "Responsive landing page with animations & modern design.",
       imgUrl: projImg12,
       githubUrl:
-        "https://github.com/Shreeti-Bajracharya/ResponsiveLandingPage",
+        "",
     },
   ];
 
@@ -112,19 +112,19 @@ export const Projects = () => {
       title: "To-Do List",
       description: "Task management app using React & JavaScript.",
       imgUrl: projImg2,
-      githubUrl: "https://github.com/Shreeti-Bajracharya/todolist",
+      githubUrl: "",
     },
     {
       title: "Calculator",
       description: "Web calculator using HTML, CSS & JavaScript.",
       imgUrl: projImg3,
-      githubUrl: "https://github.com/Shreeti-Bajracharya/Calculator",
+      githubUrl: "",
     },
     {
       title: "Weather App",
       description: "API-based weather app using React JS.",
       imgUrl: projImg8,
-      githubUrl: "https://github.com/Shreeti-Bajracharya/WeatherApp",
+      githubUrl: "",
     },
   ];
 
