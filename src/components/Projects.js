@@ -24,34 +24,35 @@ import projImg20 from "../assets/img/projImg20.png";
 export const Projects = () => {
 
   const realTimeProjects = [
-    {
-      title: "Insurance Company System",
-      description:
-        "Full-stack insurance platform using React, Tailwind, Node.js with bilingual (English–Nepali) support, Admin CRM, claims, policies, branch management and real-time updates.",
-      imgUrl: projImg19,
-      githubUrl: "",
-    },
-    {
-      title: "BBTM Foundation Website",
-      description:
-        "Responsive non-profit website showcasing healthcare, emergency response, and social programs using React and Tailwind CSS.",
-      imgUrl: projImg16,
-      githubUrl: "",
-    },
+   {
+    title: "Insurance Company System",
+    description:
+      "Full-stack insurance platform using React, Tailwind, Node.js with bilingual (English–Nepali) support, Admin CRM, claims, policies, branch management and real-time updates.",
+    imgUrl: projImg19,
+    liveUrl: "https://blue-shield-seven.vercel.app/",
+  },
+  {
+    title: "BBTM Foundation Website",
+    description:
+      "Responsive non-profit website showcasing healthcare, emergency response, and social programs using React and Tailwind CSS.",
+    imgUrl: projImg16,
+    liveUrl: "https://bbtmfoundation.org/",
+  },
+  {
+    title: "Liquor Store Ecommerce",
+    description:
+      "Full liquor e-commerce platform built in React + Tailwind with cart, category browsing, search, and upcoming API integrations.",
+    imgUrl: projImg20,
+    liveUrl: "https://liquorstore-3rcvzw4wd-shreeti-bajracharyas-projects.vercel.app/",
+  },
     {
       title: "Clothing E-commerce System",
       description:
         "MERN stack e-commerce platform with product filtering, order management and admin dashboard.",
       imgUrl: projImg17,
-      githubUrl: "",
+      liveUrl: "https://frontend-ka7mvcglf-shreeti-bajracharyas-projects.vercel.app/",
     },
-    {
-      title: "Liquor Store Ecommerce",
-      description:
-        "Full liquor e-commerce platform built in React + Tailwind with cart, category browsing, search, and upcoming API integrations.",
-      imgUrl: projImg20,
-      githubUrl: "",
-    },
+    
   ];
 
   const majorProjects = [
