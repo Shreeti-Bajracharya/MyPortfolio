@@ -1,4 +1,5 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
+
 import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
@@ -21,110 +22,142 @@ import projImg16 from "../assets/img/projImg16.png";
 import projImg17 from "../assets/img/projImg17.png";
 import projImg20 from "../assets/img/projImg20.png";
 
-export const Projects = () => {
+// export const Projects = () => {
 
-  const realTimeProjects = [
-   {
-    title: "Insurance Company System",
-    description:
-      "Full-stack insurance platform using React, Tailwind, Node.js with bilingual (English–Nepali) support, Admin CRM, claims, policies, branch management and real-time updates.",
-    imgUrl: projImg19,
-    liveUrl: "https://blue-shield-seven.vercel.app/",
-  },
-  {
-    title: "BBTM Foundation Website",
-    description:
-      "Responsive non-profit website showcasing healthcare, emergency response, and social programs using React and Tailwind CSS.",
-    imgUrl: projImg16,
-    liveUrl: "https://bbtmfoundation.org/",
-  },
-  {
-    title: "Liquor Store Ecommerce",
-    description:
-      "Full liquor e-commerce platform built in React + Tailwind with cart, category browsing, search, and upcoming API integrations.",
-    imgUrl: projImg20,
-    liveUrl: "https://liquorstore-3rcvzw4wd-shreeti-bajracharyas-projects.vercel.app/",
-  },
+//   const realTimeProjects = [
+//    {
+//     title: "Insurance Company System",
+//     description:
+//       "Full-stack insurance platform using React, Tailwind, Node.js with bilingual (English–Nepali) support, Admin CRM, claims, policies, branch management and real-time updates.",
+//     imgUrl: projImg19,
+//     liveUrl: "https://blue-shield-seven.vercel.app/",
+//   },
+//   {
+//     title: "BBTM Foundation Website",
+//     description:
+//       "Responsive non-profit website showcasing healthcare, emergency response, and social programs using React and Tailwind CSS.",
+//     imgUrl: projImg16,
+//     liveUrl: "https://bbtmfoundation.org/",
+//   },
+//   {
+//     title: "Liquor Store Ecommerce",
+//     description:
+//       "Full liquor e-commerce platform built in React + Tailwind with cart, category browsing, search, and upcoming API integrations.",
+//     imgUrl: projImg20,
+//     liveUrl: "https://liquorstore-3rcvzw4wd-shreeti-bajracharyas-projects.vercel.app/",
+//   },
+//     {
+//       title: "Clothing E-commerce System",
+//       description:
+//         "MERN stack e-commerce platform with product filtering, order management and admin dashboard.",
+//       imgUrl: projImg17,
+//       liveUrl: "https://frontend-ka7mvcglf-shreeti-bajracharyas-projects.vercel.app/",
+//     },
+
+//   ];
+
+//   const majorProjects = [
+//     {
+//       title: "Mental Health Assistant & Consultation System",
+//       description:
+//         "AI-powered MERN appointment and chatbot system using Gemini, Sentence Transformer, and FAISS indexing.",
+//       imgUrl: projImg18,
+//       githubUrl: "",
+//     },
+//     {
+//       title: "Agent Website",
+//       description:
+//         "Full animated digital agency website using React, Tailwind and Framer Motion.",
+//       imgUrl: projImg9,
+//       githubUrl: "",
+//     },
+//     {
+//       title: "Modern UI Website",
+//       description:
+//         "Modern UI website featuring parallax sections, animations, and responsive layouts.",
+//       imgUrl: projImg10,
+//       githubUrl: "",
+//     },
+//     {
+//       title: "Real Estate Website",
+//       description:
+//         "Real estate website with modern animations, responsive UI and enquiry form.",
+//       imgUrl: projImg14,
+//       githubUrl: "",
+//     },
+//   ];
+
+//   const frontendProjects = [
+//     {
+//       title: "Amazon Clone",
+//       description: "Responsive clone built using HTML, CSS, and JS.",
+//       imgUrl: projImg5,
+//       githubUrl: "",
+//     },
+//     {
+//       title: "Flower Shop Website",
+//       description: "Pure HTML + CSS e-commerce layout using Flexbox.",
+//       imgUrl: projImg11,
+//       githubUrl: "",
+//     },
+//     {
+//       title: "Landing Page UI",
+//       description: "Responsive landing page with animations & modern design.",
+//       imgUrl: projImg12,
+//       githubUrl:
+//         "",
+//     },
+//   ];
+
+//   const miniProjects = [
+//     {
+//       title: "To-Do List",
+//       description: "Task management app using React & JavaScript.",
+//       imgUrl: projImg2,
+//       githubUrl: "",
+//     },
+//     {
+//       title: "Calculator",
+//       description: "Web calculator using HTML, CSS & JavaScript.",
+//       imgUrl: projImg3,
+//       githubUrl: "",
+//     },
+//     {
+//       title: "Weather App",
+//       description: "API-based weather app using React JS.",
+//       imgUrl: projImg8,
+//       githubUrl: "",
+//     },
+//   ];
+export const Projects = () => {
+  const mainProjects = [
+    {
+      title: "Insurance Company System",
+      description:
+        "Full-stack insurance platform built with React and Node.js featuring multilingual support, admin dashboard, and API integration.",
+      imgUrl: projImg19,
+      liveUrl: "https://blue-shield-seven.vercel.app/",
+    },
+    {
+      title: "BBTM Foundation Website",
+      description:
+        "Responsive non-profit website developed using React and Tailwind CSS.",
+      imgUrl: projImg16,
+      liveUrl: "https://bbtmfoundation.org/",
+    },
     {
       title: "Clothing E-commerce System",
       description:
-        "MERN stack e-commerce platform with product filtering, order management and admin dashboard.",
+        "MERN stack e-commerce platform with product listing, cart, and order management features.",
       imgUrl: projImg17,
-      liveUrl: "https://frontend-ka7mvcglf-shreeti-bajracharyas-projects.vercel.app/",
+      liveUrl:
+        "https://frontend-ka7mvcglf-shreeti-bajracharyas-projects.vercel.app/",
     },
-    
-  ];
-
-  const majorProjects = [
     {
-      title: "Mental Health Assistant & Consultation System",
+      title: "Mental Health Assistant System",
       description:
-        "AI-powered MERN appointment and chatbot system using Gemini, Sentence Transformer, and FAISS indexing.",
+        "Academic project with chatbot integration and appointment system.",
       imgUrl: projImg18,
-      githubUrl: "",
-    },
-    {
-      title: "Agent Website",
-      description:
-        "Full animated digital agency website using React, Tailwind and Framer Motion.",
-      imgUrl: projImg9,
-      githubUrl: "",
-    },
-    {
-      title: "Modern UI Website",
-      description:
-        "Modern UI website featuring parallax sections, animations, and responsive layouts.",
-      imgUrl: projImg10,
-      githubUrl: "",
-    },
-    {
-      title: "Real Estate Website",
-      description:
-        "Real estate website with modern animations, responsive UI and enquiry form.",
-      imgUrl: projImg14,
-      githubUrl: "",
-    },
-  ];
-
-  const frontendProjects = [
-    {
-      title: "Amazon Clone",
-      description: "Responsive clone built using HTML, CSS, and JS.",
-      imgUrl: projImg5,
-      githubUrl: "",
-    },
-    {
-      title: "Flower Shop Website",
-      description: "Pure HTML + CSS e-commerce layout using Flexbox.",
-      imgUrl: projImg11,
-      githubUrl: "",
-    },
-    {
-      title: "Landing Page UI",
-      description: "Responsive landing page with animations & modern design.",
-      imgUrl: projImg12,
-      githubUrl:
-        "",
-    },
-  ];
-
-  const miniProjects = [
-    {
-      title: "To-Do List",
-      description: "Task management app using React & JavaScript.",
-      imgUrl: projImg2,
-      githubUrl: "",
-    },
-    {
-      title: "Calculator",
-      description: "Web calculator using HTML, CSS & JavaScript.",
-      imgUrl: projImg3,
-      githubUrl: "",
-    },
-    {
-      title: "Weather App",
-      description: "API-based weather app using React JS.",
-      imgUrl: projImg8,
       githubUrl: "",
     },
   ];
@@ -136,10 +169,16 @@ export const Projects = () => {
           <Col>
             <h2 className="section-heading">Projects</h2>
             <p className="section-subtitle">
-              A curated collection of the work I've designed, developed, and contributed to.
+              A curated collection of the work I've designed, developed, and
+              contributed to.
             </p>
+            <Row className="mt-4">
+              {mainProjects.map((project, index) => (
+                <ProjectCard key={index} {...project} />
+              ))}
+            </Row>
 
-            <Tab.Container id="projects-tabs" defaultActiveKey="first">
+            {/* <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav
                 variant="pills"
                 className="nav-pills justify-content-center align-items-center modern-tabs"
@@ -191,7 +230,7 @@ export const Projects = () => {
                   </Row>
                 </Tab.Pane>
               </Tab.Content>
-            </Tab.Container>
+            </Tab.Container> */}
           </Col>
         </Row>
       </Container>

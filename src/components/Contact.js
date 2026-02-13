@@ -95,7 +95,10 @@ export const Contact = () => {
           <Col md={6}>
             <h2>Let’s Connect</h2>
             <p>
-              I’m actively seeking opportunities to grow and contribute as a developer. If you’re hiring or have a project I could be part of, I’d love to connect!
+              I’m a final-year BSc CSIT student interested in Frontend
+              Development and Software Quality Assurance roles. I’m open to
+              internships and entry-level opportunities where I can learn,
+              contribute, and grow in a collaborative environment.
             </p>
 
             <div className="contact-links">
@@ -103,8 +106,9 @@ export const Contact = () => {
                 href="mailto:shreetibajracharya73@gmail.com"
                 className="contact-btn"
               >
-                <FaEnvelope className="icon" /> Email Me
+                <FaEnvelope className="icon" /> Email
               </a>
+
               <a
                 href="https://www.linkedin.com/in/shreeti-bajracharya-b2878a33b/"
                 target="_blank"
@@ -113,6 +117,7 @@ export const Contact = () => {
               >
                 <FaLinkedin className="icon" /> LinkedIn
               </a>
+
               <a
                 href="https://github.com/Shreeti-Bajracharya"
                 target="_blank"
