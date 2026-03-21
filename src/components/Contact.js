@@ -1,131 +1,210 @@
-// import { useState } from "react"
-// import { Container, Row, Col, Placeholder } from "react-bootstrap";
-// import contactImg from "../assets/img/contact-img.svg";
-// export const Contact =()=>{
-//     const formInitialDetails={
-//     firstName:'',
-//     lastName:'',
-//     email:'',
-//     phone:'',
-//     message:''
-// }
-// const[formDetails, setFormDetails]=useState(formInitialDetails);
-// const[buttonText, setButtonText]=useState('Send');
-// const[status, setStatus]=useState({} );
-
-// const onFormUpdate=(category, value)=>{
-//     setFormDetails({
-//         ...formDetails,
-//         [category]:value
-//     })
-// }
-
-// const handleSubmit=async(e)=>{
-//     e.preventDefault();
-//     setButtonText('Sending...');
-//     let response=await fetch("http://localhost:5000/contact", {
-//         method:"POST",
-//         headers:{
-//             "Content-Type":"Application/json;charset=utf-8",
-//         },
-//         body:JSON.stringify(formDetails),
-//     });
-//     setButtonText("Send");
-//     let result=await response.json();
-//     setFormDetails(formInitialDetails);
-//     if (result.code === 200) {
-//   setStatus({ success: true, message: 'Message sent successfully' });
-// } else {
-//   setStatus({ success: false, message: 'Something went wrong, please try again later.' });
-// }
-// };
-//     return(
-//         <section className="contact" id="connect">
-//             <Container>
-//                 <Row className="align-items-center">
-//                     <Col md={6}>
-//                     <img src={contactImg} alt="Contact Us"/>
-//                     </Col>
-//                     <Col md={6}>
-//                     <h2>Get In Touch</h2>
-//                     <form onSubmit={handleSubmit}>
-//                         <Row>
-//                             <Col sm={6} className="px-1">
-//                             <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e)=>onFormUpdate('firstName', e.target.value)}/>
-//                             </Col>
-//                             <Col sm={6} className="px-1">
-//                             <input type="text" value={formDetails.lastName} placeholder="Last Name" onChange={(e)=>onFormUpdate('lastName', e.target.value)}/>
-//                             </Col>
-//                             <Col sm={6} className="px-1">
-//                             <input type="email" value={formDetails.email} placeholder="Email Address" onChange={(e)=>onFormUpdate('email', e.target.value)}/>
-//                             </Col>
-//                             <Col sm={6} className="px-1">
-//                             <input type="tel" value={formDetails.phone} placeholder="Phone No." onChange={(e)=>onFormUpdate('phone', e.target.value)}/>
-//                             </Col>
-//                             <Col>
-//                             <textarea rows="6" value={formDetails.message} placeholder="Message" onChange={(e)=>onFormUpdate('message', e.target.value)}/>
-//                                 <button type="submit"><span>{buttonText}</span></button>
-//                             </Col>
-//                             {
-//                                 status.message &&
-//                                 <Col>
-//                                 <p className={status.success===false? "danger":"success"}>{status.message}</p>
-//                                 </Col>
-//                             }
-//                         </Row>
-//                     </form>
-//                     </Col>
-//                 </Row>
-//             </Container>
-//         </section>
-//     )
-// }
 import { Container, Row, Col } from "react-bootstrap";
-import contactImg from "../assets/img/contact-img.svg";
+import { useState, useContext } from "react";
+import contactImg from "../assets/img/contact-img.png";
 import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
+import { ThemeContext } from "../context/ThemeContext";
 
 export const Contact = () => {
+  const { isDark } = useContext(ThemeContext);
+  const [formDetails, setFormDetails] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+  const [buttonText, setButtonText] = useState("Send Message");
+  const [status, setStatus] = useState({});
+  const [isLoading, setIsLoading] = useState(false);
+
+  const onFormUpdate = (category, value) => {
+    setFormDetails({
+      ...formDetails,
+      [category]: value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setButtonText("Sending...");
+    setIsLoading(true);
+
+    try {
+      const response = await fetch("http://localhost:5000/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json;charset=utf-8",
+        },
+        body: JSON.stringify(formDetails),
+      });
+
+      const result = await response.json();
+      setButtonText("Send Message");
+      setIsLoading(false);
+
+      if (result.code === 200) {
+        setStatus({
+          success: true,
+          message: "✅ Message sent successfully! I'll get back to you soon.",
+        });
+        setFormDetails({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+      } else {
+        setStatus({
+          success: false,
+          message:
+            result.message || "❌ Something went wrong. Please try again.",
+        });
+      }
+
+      setTimeout(() => setStatus({}), 5000);
+    } catch (error) {
+      setButtonText("Send Message");
+      setIsLoading(false);
+      setStatus({
+        success: false,
+        message: "❌ Network error. Make sure the server is running (npm run dev)",
+      });
+      console.error("Error:", error);
+    }
+  };
+
   return (
-    <section className="contact" id="connect">
+    <section className={`contact ${isDark ? "contact-dark" : "contact-light"}`} id="contact">
       <Container>
+        <h2 className="text-center mb-5">Get In Touch</h2>
+
         <Row className="align-items-center">
-          <Col md={6} className="text-center">
-            <img src={contactImg} alt="Contact Illustration" />
+          <Col md={6} className="text-center mb-4 mb-md-0">
+            <img src={contactImg} alt="Contact Illustration" className="contact-img" />
           </Col>
+
           <Col md={6}>
-            <h2>Let’s Connect</h2>
-            <p>
-              I’m a final-year BSc CSIT student interested in Frontend
-              Development and Software Quality Assurance roles. I’m open to
-              internships and entry-level opportunities where I can learn,
-              contribute, and grow in a collaborative environment.
+            <p className="contact-intro">
+              I'm always open to new opportunities, collaborations, and interesting projects. 
+              Feel free to reach out if you'd like to connect or discuss how I can contribute to your team!
             </p>
 
-            <div className="contact-links">
-              <a
-                href="mailto:shreetibajracharya73@gmail.com"
-                className="contact-btn"
-              >
-                <FaEnvelope className="icon" /> Email
-              </a>
+            <form onSubmit={handleSubmit} className="contact-form">
+              <Row>
+                <Col sm={6} className="mb-3">
+                  <input
+                    type="text"
+                    value={formDetails.firstName}
+                    placeholder="First Name"
+                    onChange={(e) => onFormUpdate("firstName", e.target.value)}
+                    className={`form-input ${isDark ? "form-input-dark" : "form-input-light"}`}
+                    required
+                    disabled={isLoading}
+                  />
+                </Col>
 
-              <a
-                href="https://www.linkedin.com/in/shreeti-bajracharya-b2878a33b/"
-                target="_blank"
-                rel="noreferrer"
-                className="contact-btn"
-              >
-                <FaLinkedin className="icon" /> LinkedIn
-              </a>
+                <Col sm={6} className="mb-3">
+                  <input
+                    type="text"
+                    value={formDetails.lastName}
+                    placeholder="Last Name"
+                    onChange={(e) => onFormUpdate("lastName", e.target.value)}
+                    className={`form-input ${isDark ? "form-input-dark" : "form-input-light"}`}
+                    disabled={isLoading}
+                  />
+                </Col>
 
-              <a
-                href="https://github.com/Shreeti-Bajracharya"
-                target="_blank"
-                rel="noreferrer"
-                className="contact-btn"
-              >
-                <FaGithub className="icon" /> GitHub
-              </a>
+                <Col sm={6} className="mb-3">
+                  <input
+                    type="email"
+                    value={formDetails.email}
+                    placeholder="Email Address"
+                    onChange={(e) => onFormUpdate("email", e.target.value)}
+                    className={`form-input ${isDark ? "form-input-dark" : "form-input-light"}`}
+                    required
+                    disabled={isLoading}
+                  />
+                </Col>
+
+                <Col sm={6} className="mb-3">
+                  <input
+                    type="tel"
+                    value={formDetails.phone}
+                    placeholder="Phone No. (Optional)"
+                    onChange={(e) => onFormUpdate("phone", e.target.value)}
+                    className={`form-input ${isDark ? "form-input-dark" : "form-input-light"}`}
+                    disabled={isLoading}
+                  />
+                </Col>
+
+                <Col className="mb-3">
+                  <textarea
+                    rows="5"
+                    value={formDetails.message}
+                    placeholder="Your Message"
+                    onChange={(e) => onFormUpdate("message", e.target.value)}
+                    className={`form-textarea ${isDark ? "form-input-dark" : "form-input-light"}`}
+                    required
+                    disabled={isLoading}
+                  />
+                </Col>
+
+                <Col>
+                  <button
+                    type="submit"
+                    className={`submit-btn ${isDark ? "submit-btn-dark" : "submit-btn-light"}`}
+                    disabled={isLoading}
+                  >
+                    {buttonText}
+                  </button>
+                </Col>
+
+                {status.message && (
+                  <Col className="mt-3">
+                    <p
+                      className={`status-message ${
+                        status.success ? "status-success" : "status-danger"
+                      }`}
+                    >
+                      {status.message}
+                    </p>
+                  </Col>
+                )}
+              </Row>
+            </form>
+
+            <div className="contact-links mt-4 pt-4 border-top">
+              <p className="text-muted small">Or reach out directly:</p>
+              <div className="d-flex gap-3 flex-wrap">
+                <a
+                  href="mailto:shreetibajracharya73@gmail.com"
+                  className={`contact-btn ${isDark ? "contact-btn-dark" : "contact-btn-light"}`}
+                  title="Send Email"
+                >
+                  <FaEnvelope className="icon" /> Email
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/shreeti-bajracharya-b2878a33b/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`contact-btn ${isDark ? "contact-btn-dark" : "contact-btn-light"}`}
+                  title="Connect on LinkedIn"
+                >
+                  <FaLinkedin className="icon" /> LinkedIn
+                </a>
+
+                <a
+                  href="https://github.com/Shreeti-Bajracharya"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`contact-btn ${isDark ? "contact-btn-dark" : "contact-btn-light"}`}
+                  title="View GitHub Profile"
+                >
+                  <FaGithub className="icon" /> GitHub
+                </a>
+              </div>
             </div>
           </Col>
         </Row>

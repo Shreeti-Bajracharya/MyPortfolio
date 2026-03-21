@@ -1,154 +1,37 @@
 import { Container, Row, Col } from "react-bootstrap";
-
+import { useContext } from "react";
 import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import { ThemeContext } from "../context/ThemeContext";
 
-import projImg1 from "../assets/img/projImg1.png";
-import projImg2 from "../assets/img/projImg2.png";
-import projImg3 from "../assets/img/projImg3.png";
-import projImg4 from "../assets/img/projImg4.png";
-import projImg5 from "../assets/img/projImg5.png";
-import projImg6 from "../assets/img/projImg6.png";
-import projImg7 from "../assets/img/projImg7.png";
-import projImg8 from "../assets/img/projImg8.png";
-import projImg9 from "../assets/img/projImg9.png";
-import projImg10 from "../assets/img/projImg10.png";
-import projImg11 from "../assets/img/projImg11.png";
-import projImg12 from "../assets/img/projImg12.png";
-import projImg18 from "../assets/img/projImg18.png";
-import projImg14 from "../assets/img/projImg14.png";
-import projImg19 from "../assets/img/projImg19.png";
 import projImg16 from "../assets/img/projImg16.png";
 import projImg17 from "../assets/img/projImg17.png";
-import projImg20 from "../assets/img/projImg20.png";
+import projImg18 from "../assets/img/projImg18.png";
+import projImg19 from "../assets/img/projImg19.png";
 
-// export const Projects = () => {
-
-//   const realTimeProjects = [
-//    {
-//     title: "Insurance Company System",
-//     description:
-//       "Full-stack insurance platform using React, Tailwind, Node.js with bilingual (English–Nepali) support, Admin CRM, claims, policies, branch management and real-time updates.",
-//     imgUrl: projImg19,
-//     liveUrl: "https://blue-shield-seven.vercel.app/",
-//   },
-//   {
-//     title: "BBTM Foundation Website",
-//     description:
-//       "Responsive non-profit website showcasing healthcare, emergency response, and social programs using React and Tailwind CSS.",
-//     imgUrl: projImg16,
-//     liveUrl: "https://bbtmfoundation.org/",
-//   },
-//   {
-//     title: "Liquor Store Ecommerce",
-//     description:
-//       "Full liquor e-commerce platform built in React + Tailwind with cart, category browsing, search, and upcoming API integrations.",
-//     imgUrl: projImg20,
-//     liveUrl: "https://liquorstore-3rcvzw4wd-shreeti-bajracharyas-projects.vercel.app/",
-//   },
-//     {
-//       title: "Clothing E-commerce System",
-//       description:
-//         "MERN stack e-commerce platform with product filtering, order management and admin dashboard.",
-//       imgUrl: projImg17,
-//       liveUrl: "https://frontend-ka7mvcglf-shreeti-bajracharyas-projects.vercel.app/",
-//     },
-
-//   ];
-
-//   const majorProjects = [
-//     {
-//       title: "Mental Health Assistant & Consultation System",
-//       description:
-//         "AI-powered MERN appointment and chatbot system using Gemini, Sentence Transformer, and FAISS indexing.",
-//       imgUrl: projImg18,
-//       githubUrl: "",
-//     },
-//     {
-//       title: "Agent Website",
-//       description:
-//         "Full animated digital agency website using React, Tailwind and Framer Motion.",
-//       imgUrl: projImg9,
-//       githubUrl: "",
-//     },
-//     {
-//       title: "Modern UI Website",
-//       description:
-//         "Modern UI website featuring parallax sections, animations, and responsive layouts.",
-//       imgUrl: projImg10,
-//       githubUrl: "",
-//     },
-//     {
-//       title: "Real Estate Website",
-//       description:
-//         "Real estate website with modern animations, responsive UI and enquiry form.",
-//       imgUrl: projImg14,
-//       githubUrl: "",
-//     },
-//   ];
-
-//   const frontendProjects = [
-//     {
-//       title: "Amazon Clone",
-//       description: "Responsive clone built using HTML, CSS, and JS.",
-//       imgUrl: projImg5,
-//       githubUrl: "",
-//     },
-//     {
-//       title: "Flower Shop Website",
-//       description: "Pure HTML + CSS e-commerce layout using Flexbox.",
-//       imgUrl: projImg11,
-//       githubUrl: "",
-//     },
-//     {
-//       title: "Landing Page UI",
-//       description: "Responsive landing page with animations & modern design.",
-//       imgUrl: projImg12,
-//       githubUrl:
-//         "",
-//     },
-//   ];
-
-//   const miniProjects = [
-//     {
-//       title: "To-Do List",
-//       description: "Task management app using React & JavaScript.",
-//       imgUrl: projImg2,
-//       githubUrl: "",
-//     },
-//     {
-//       title: "Calculator",
-//       description: "Web calculator using HTML, CSS & JavaScript.",
-//       imgUrl: projImg3,
-//       githubUrl: "",
-//     },
-//     {
-//       title: "Weather App",
-//       description: "API-based weather app using React JS.",
-//       imgUrl: projImg8,
-//       githubUrl: "",
-//     },
-//   ];
 export const Projects = () => {
+  const { isDark } = useContext(ThemeContext);
+
   const mainProjects = [
+            {
+      title: "Innovation Hub – Hackathon Collaboration Platform",
+      description:
+        "Drupal 7.95 hackathon platform with idea submission, voting, moderation, and analytics—backed by Drupal SimpleTest automation for core workflows, DB checks, access control, and basic XSS prevention.",
+      // If you have a screenshot, replace with projImg20
+      imgUrl: projImg18,
+      githubUrl: "https://github.com/Shreeti-Bajracharya/InnovationHub",
+    },
     {
       title: "Insurance Company System",
       description:
-        "Full-stack insurance platform built with React and Node.js featuring multilingual support, admin dashboard, and API integration.",
+        "React-based insurance platform with multilingual UI and API integration. Focused on responsive UI, authentication flow validation, and functional/UI testing.",
       imgUrl: projImg19,
       liveUrl: "https://blue-shield-seven.vercel.app/",
     },
     {
-      title: "BBTM Foundation Website",
-      description:
-        "Responsive non-profit website developed using React and Tailwind CSS.",
-      imgUrl: projImg16,
-      liveUrl: "https://bbtmfoundation.org/",
-    },
-    {
       title: "Clothing E-commerce System",
       description:
-        "MERN stack e-commerce platform with product listing, cart, and order management features.",
+        "MERN e-commerce platform with product listing, cart, and order management. Practiced end-to-end workflow testing and basic API validation for key user flows.",
       imgUrl: projImg17,
       liveUrl:
         "https://frontend-ka7mvcglf-shreeti-bajracharyas-projects.vercel.app/",
@@ -156,81 +39,31 @@ export const Projects = () => {
     {
       title: "Mental Health Assistant System",
       description:
-        "Academic project with chatbot integration and appointment system.",
+        "Academic project with chatbot integration and appointment system. Wrote manual test cases to verify chatbot responses and tested core interaction flows for accuracy.",
       imgUrl: projImg18,
       githubUrl: "",
     },
   ];
 
   return (
-    <section className="project" id="projects">
+    <section
+      className={`project ${isDark ? "project-dark" : "project-light"}`}
+      id="projects"
+    >
       <Container>
         <Row>
           <Col>
             <h2 className="section-heading">Projects</h2>
             <p className="section-subtitle">
-              A curated collection of the work I've designed, developed, and
-              contributed to.
+              A curated collection of projects I’ve built and tested—focused on
+              responsive UI, reliable workflows, and quality-driven development.
             </p>
-            <Row className="mt-4">
+
+            <Row className="mt-5">
               {mainProjects.map((project, index) => (
                 <ProjectCard key={index} {...project} />
               ))}
             </Row>
-
-            {/* <Tab.Container id="projects-tabs" defaultActiveKey="first">
-              <Nav
-                variant="pills"
-                className="nav-pills justify-content-center align-items-center modern-tabs"
-              >
-                <Nav.Item>
-                  <Nav.Link eventKey="first">Real-Time / Internship</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="second">Major Projects</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="third">Frontend Practice</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="fourth">Mini Projects</Nav.Link>
-                </Nav.Item>
-              </Nav>
-
-              <Tab.Content className="fade-up">
-                <Tab.Pane eventKey="first">
-                  <Row>
-                    {realTimeProjects.map((project, index) => (
-                      <ProjectCard key={index} {...project} />
-                    ))}
-                  </Row>
-                </Tab.Pane>
-
-                <Tab.Pane eventKey="second">
-                  <Row>
-                    {majorProjects.map((project, index) => (
-                      <ProjectCard key={index} {...project} />
-                    ))}
-                  </Row>
-                </Tab.Pane>
-
-                <Tab.Pane eventKey="third">
-                  <Row>
-                    {frontendProjects.map((project, index) => (
-                      <ProjectCard key={index} {...project} />
-                    ))}
-                  </Row>
-                </Tab.Pane>
-
-                <Tab.Pane eventKey="fourth">
-                  <Row>
-                    {miniProjects.map((project, index) => (
-                      <ProjectCard key={index} {...project} />
-                    ))}
-                  </Row>
-                </Tab.Pane>
-              </Tab.Content>
-            </Tab.Container> */}
           </Col>
         </Row>
       </Container>
