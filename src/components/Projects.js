@@ -4,44 +4,42 @@ import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import { ThemeContext } from "../context/ThemeContext";
 
-import projImg16 from "../assets/img/projImg16.png";
-import projImg17 from "../assets/img/projImg17.png";
-import projImg18 from "../assets/img/projImg18.png";
-import projImg19 from "../assets/img/projImg19.png";
+import projImg1 from "../assets/img/projImg1.png";
+import projImg2 from "../assets/img/projImg2.png";
+import projImg3 from "../assets/img/projImg3.png";
+import projImg4 from "../assets/img/projImg4.png";
 
 export const Projects = () => {
   const { isDark } = useContext(ThemeContext);
 
   const mainProjects = [
-            {
+    {
       title: "Innovation Hub – Hackathon Collaboration Platform",
       description:
-        "Drupal 7.95 hackathon platform with idea submission, voting, moderation, and analytics—backed by Drupal SimpleTest automation for core workflows, DB checks, access control, and basic XSS prevention.",
+        "Drupal 7.95 hackathon platform with idea submission, voting, moderation, and analytics, backed by Drupal SimpleTest automation for core workflows, DB checks, access control, and basic XSS prevention.",
       // If you have a screenshot, replace with projImg20
-      imgUrl: projImg18,
+      imgUrl: projImg1,
       githubUrl: "https://github.com/Shreeti-Bajracharya/InnovationHub",
     },
     {
       title: "Insurance Company System",
       description:
         "React-based insurance platform with multilingual UI and API integration. Focused on responsive UI, authentication flow validation, and functional/UI testing.",
-      imgUrl: projImg19,
+      imgUrl: projImg2,
       liveUrl: "https://blue-shield-seven.vercel.app/",
     },
     {
       title: "Clothing E-commerce System",
       description:
         "MERN e-commerce platform with product listing, cart, and order management. Practiced end-to-end workflow testing and basic API validation for key user flows.",
-      imgUrl: projImg17,
-      liveUrl:
-        "https://frontend-ka7mvcglf-shreeti-bajracharyas-projects.vercel.app/",
+      imgUrl: projImg4,
+      githubUrl: "https://github.com/Shreeti-Bajracharya/ecommerce-website",
     },
     {
-      title: "Mental Health Assistant System",
-      description:
-        "Academic project with chatbot integration and appointment system. Wrote manual test cases to verify chatbot responses and tested core interaction flows for accuracy.",
-      imgUrl: projImg18,
-      githubUrl: "",
+      title: "Mental Health Chatbot",
+      description: "Developed a mental health chatbot and wrote manual test cases to verify response accuracy, severity classification, and user interaction flows.",
+      imgUrl: projImg3,
+      githubUrl: "https://github.com/Shreeti-Bajracharya/MentalHealthChatbot",
     },
   ];
 

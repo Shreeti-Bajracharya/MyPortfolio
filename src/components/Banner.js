@@ -29,7 +29,7 @@ export const Banner = () => {
             </h1>
 
             <p className="banner-text">
-              Quality-focused and detail-oriented, eager to grow into a QA Engineer and help deliver reliable, user-friendly web applications.
+              Aspiring Software Engineer
             </p>
 
             <button className="connect-btn" onClick={handleConnect}>
