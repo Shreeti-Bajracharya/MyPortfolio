@@ -894,11 +894,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .skill-dark .skill-subtitle {
-  color: #c6ac8f;
+  color: var(--accent-warm);
 }
 
 .skill-light .skill-subtitle {
-  color: #5e503f;
+  color: var(--dark-accent);
 }
 
 /* Skills Grid Container */
@@ -962,6 +962,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: 2px solid;
 }
 
+.skill-card-dark .skill-icon-wrapper {
+  border-color: var(--accent-warm);
+  background: rgba(198, 172, 143, 0.08);
+}
+
+.skill-card-light .skill-icon-wrapper {
+  border-color: var(--dark-accent);
+  background: rgba(94, 80, 63, 0.08);
+}
+
 .skill-card:hover .skill-icon-wrapper {
   transform: scale(1.1);
 }
@@ -975,13 +985,45 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transform: scale(1.1);
 }
 
-/* Skill Card Name */
+/* Skill Card Name - Color Coded */
 .skill-card-name {
   font-size: 13px;
   font-weight: 700;
   text-align: center;
   margin: 0;
   transition: all 0.3s ease;
+}
+
+.skill-card:nth-child(1) .skill-card-name {
+  color: #E34C26;
+}
+
+.skill-card:nth-child(2) .skill-card-name {
+  color: #1572B6;
+}
+
+.skill-card:nth-child(3) .skill-card-name {
+  color: #F7DF1E;
+}
+
+.skill-card:nth-child(4) .skill-card-name {
+  color: #61DAFB;
+}
+
+.skill-card:nth-child(5) .skill-card-name {
+  color: #F1502F;
+}
+
+.skill-card:nth-child(6) .skill-card-name {
+  color: #FF6C37;
+}
+
+.skill-card:nth-child(7) .skill-card-name {
+  color: #4CAF50;
+}
+
+.skill-card:nth-child(8) .skill-card-name {
+  color: #339933;
 }
 
 .skill-card:hover .skill-card-name {
