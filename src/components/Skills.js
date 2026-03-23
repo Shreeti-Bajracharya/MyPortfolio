@@ -49,39 +49,22 @@ export const Skills = () => {
                   return (
                     <div
                       key={index}
-                      className={`modern-skill-card ${
+                      className={`skill-card ${
                         isDark ? "skill-card-dark" : "skill-card-light"
                       }`}
-                      style={{ animationDelay: `${index * 0.06}s` }}
+                      style={{ animationDelay: `${index * 0.05}s` }}
                     >
-                      {/* Background gradient orb */}
-                      <div className="skill-glow"></div>
-
-                      {/* Main content */}
-                      <div className="skill-content">
-                        <div
-                          className="skill-icon-wrapper"
-                          style={{
-                            background: isDark
-                              ? `linear-gradient(135deg, rgba(${hexToRgb(skill.color)}, 0.15), rgba(${hexToRgb(skill.color)}, 0.05))`
-                              : `linear-gradient(135deg, rgba(${hexToRgb(skill.color)}, 0.12), rgba(${hexToRgb(skill.color)}, 0.03))`,
-                            borderColor: skill.color,
-                          }}
-                        >
-                          <Icon
-                            className="skill-icon"
-                            style={{ color: skill.color }}
-                          />
-                        </div>
-
-                        <h4 className="skill-card-name">{skill.name}</h4>
+                      <div
+                        className="skill-icon-wrapper"
+                        style={{ borderColor: skill.color }}
+                      >
+                        <Icon
+                          className="skill-icon"
+                          style={{ color: skill.color }}
+                        />
                       </div>
 
-                      {/* Hover accent bar */}
-                      <div
-                        className="skill-accent-bar"
-                        style={{ backgroundColor: skill.color }}
-                      ></div>
+                      <h4 className="skill-card-name">{skill.name}</h4>
                     </div>
                   );
                 })}
@@ -95,14 +78,3 @@ export const Skills = () => {
     </section>
   );
 };
-
-// Helper function to convert hex to RGB
-function hexToRgb(hex) {
-  const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-  return result
-    ? `${parseInt(result[1], 16)}, ${parseInt(result[2], 16)}, ${parseInt(
-        result[3],
-        16
-      )}`
-    : "0, 0, 0";
-}
